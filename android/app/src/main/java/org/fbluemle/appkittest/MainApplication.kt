@@ -1,4 +1,4 @@
-package com.appkittest
+package org.fbluemle.appkittest
 
 import android.app.Application
 import com.facebook.react.PackageList
