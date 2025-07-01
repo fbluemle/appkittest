@@ -1,0 +1,14 @@
+diff --git a/node_modules/@reown/appkit-scaffold-react-native/src/utils/UiUtil.ts b/node_modules/@reown/appkit-scaffold-react-native/src/utils/UiUtil.ts
+index 65e1f9d..ca17dfd 100644
+--- a/node_modules/@reown/appkit-scaffold-react-native/src/utils/UiUtil.ts
++++ b/node_modules/@reown/appkit-scaffold-react-native/src/utils/UiUtil.ts
+@@ -10,7 +10,8 @@ export const UiUtil = {
+   TOTAL_VISIBLE_WALLETS: 4,
+ 
+   createViewTransition: () => {
+-    LayoutAnimation.configureNext(LayoutAnimation.create(200, 'easeInEaseOut', 'opacity'));
++    // Animation crashes iOS
++    // LayoutAnimation.configureNext(LayoutAnimation.create(200, 'easeInEaseOut', 'opacity'));
+   },
+ 
+   storeConnectedWallet: async (
